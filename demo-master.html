@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en"><!-- manifest="cache-manifest.appcache"> -->
+	<head>
+		<meta charset="utf-8">
+
+		<title>Mozlando Demo -- Master</title>
+		
+		<meta name="description" content="Mozlando demo -- master">
+		<meta name="author" content="Blair MacIntyre">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/ar-moz.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			.ar-text-box {
+				position: absolute;
+				top: 5%;
+				left: 50%;
+				color: white;
+				background: rgba(27,55,55,0.75);;
+				outline: 1px solid rgba(127,255,255,0.75);
+				border: 0px;
+				padding: 5px 10px;
+				transform: translate(-50%, 0%);
+				font-size: 0.8em;
+			}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<script src="resources/webxr/examples/libs/three.min.js"></script>
+		<script src="resources/webxr/examples/libs/loaders/BinaryLoader.js"></script>
+		<script src="resources/webxr/examples/models/TeapotBufferGeometry.js"></script>
+		<script src="resources/webxr/examples/libs/three-gltf-loader.js"></script>
+
+		<script src="resources/webxr/examples/libs/shaders/ConvolutionShader.js"></script>
+		<script src="resources/webxr/examples/libs/shaders/CopyShader.js"></script>
+		<script src="resources/webxr/examples/libs/shaders/FilmShader.js"></script>
+		<script src="resources/webxr/examples/libs/shaders/FocusShader.js"></script>
+
+		<script src="resources/webxr/examples/libs/postprocessing/EffectComposer.js"></script>
+		<script src="resources/webxr/examples/libs/postprocessing/MaskPass.js"></script>
+		<script src="resources/webxr/examples/libs/postprocessing/RenderPass.js"></script>
+		<script src="resources/webxr/examples/libs/postprocessing/BloomPass.js"></script>
+		<script src="resources/webxr/examples/libs/postprocessing/ShaderPass.js"></script>
+		<script src="resources/webxr/examples/libs/postprocessing/FilmPass.js"></script>
+
+		<script src="resources/webxr/dist/webxr-polyfill.js"></script>
+
+		<script src="resources/webxr/examples/common.js"></script>
+
+		<script src="lib/js/spin.js"></script>
+		<!--
+		<script src="resources/js/aframe-v0.5.0.js"></script>
+
+		<script src="resources/js/aframe-look-at-component.js"></script>
+		-->
+		<link rel="stylesheet" type="text/css" href="resources/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/aframe.css">
+	    <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+
+		<!-- refs:  http://www.imore.com/pokemon-go for the PG pic 
+		-->
+	</head>
+
+	<body style="visibility: visible;">
+		<div id="target"></div>
+		
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides" data-background="transparent">
+
+				<section data-markdown="slides/demo-setup-master.md"
+						data-separator="\r?\n------\r?\n"
+						data-separator-vertical="\r?\n---\r?\n"
+						data-separator-notes="<!-- NOTES -->">
+				</section>
+
+			</div>
+		</div>
+		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			var spinnerOpts = {
+				lines: 13, // The number of lines to draw
+				length: 4, // The length of each line
+				width: 1, // The line thickness
+				radius: 2, // The radius of the inner circle
+				scale: 1, // Scales overall size of the spinner
+				corners: 1, // Corner roundness (0..1)
+				color: '#ffffff', // CSS color or array of colors
+				fadeColor: 'transparent', // CSS color or array of colors
+				opacity: 0.25, // Opacity of the lines
+				rotate: 0, // The rotation offset
+				direction: 1, // 1: clockwise, -1: counterclockwise
+				speed: 1, // Rounds per second
+				trail: 60, // Afterglow percentage
+				fps: 20, // Frames per second when using setTimeout() as a fallback in IE 9
+				zIndex: 2e9, // The z-index (defaults to 2000000000)
+				className: 'spinner', // The CSS class to assign to the spinner
+				top: '98%', // Top position relative to parent
+				left: '50%', // Left position relative to parent
+				shadow: 'none', // Box-shadow for the lines
+				position: 'absolute' // Element positioning
+			};
+			var target = document.body;
+			var spinner = new Spinner(spinnerOpts).spin(target);
+
+				
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				overview: false,
+				width: 1280,
+				height: 720,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				multiplex: {
+					// Example values. To generate your own, see the socket.io server instructions.
+					secret: '15417754247786396111', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+					//secret: null, // Obtained from the socket.io server. Gives this (the master) control of the presentation
+					id: 'e6929fe6f45c44d2', // Obtained from socket.io server
+					url: 'reveal-server-with-worldmap.glitch.me' // Location of your socket.io server
+				},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js', async: false },
+					{ src: 'plugin/multiplex-ar/master.js', async: false },
+					{ src: 'plugin/multiplex-ar/client.js', async: false },
+
+	//					{ src: 'socket.io/socket.io.js', async: true },
+	//					{ src: 'plugin/notes-server/client.js', async: true },
+
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+
+<script src="resources/app-3d.js"></script>
+		
+		<style type="text/css">
+			/* 1. Style header/footer <div> so they are positioned as desired. */
+			#header-left {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+			}
+			#header-right {
+				position: absolute;
+				top: 0%;
+				right: 0%;
+				text-align: right;
+			}
+			#footer-left {
+				position: absolute;
+				bottom: 0%;
+				left: 0%;
+			}
+			#footer-right {
+				position: absolute;
+				bottom: 0%;
+				right: 0%;
+				text-align: right;
+			}
+		</style>
+
+		<!-- 2. Create hidden header/footer <div> -->
+		<div id="hidden" style="display:none;">
+			<div id="header">
+				<div id="header-left"></div>
+				<div id="header-right"></div>
+				<div id="footer-left"><img src="resources/moz-logo-orange-rgb.svg" alt="mozilla logo" width="20%" /></div>
+				<div id="footer-right"></div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript">
+			// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+			var header = $('#header').html();
+			if ( window.location.search.match( /print-pdf/gi ) ) {
+				Reveal.addEventListener( 'ready', function( event ) {
+					$('.slide-background').append(header);
+				});
+			}
+			else {
+				Reveal.addEventListener( 'ready', function( event ) {
+					var b = document.getElementsByClassName('pause-overlay');
+					var h = document.getElementById("header");
+					var p = b[0].parentNode;
+					p.insertBefore(h,b[0]);
+				});
+		}
+		</script>
+ 	 </body> 
+</html>
