@@ -1,18 +1,3 @@
-<!-- .slide: data-background="resources/textures/background-radial.jpeg"  -->
-
-<div class="column-container">
-
-<div class="column">
-    <img class="plain" data-src="resources/textures/arStudio1-sm.png">
-</div>
-
-<div class="column">
-    <img class="plain" data-src="resources/textures/hubs-OMS-lecture-dk.jpg">
-</div>
-
-</div>
-------
-
 <!-- .slide: data-background="resources/textures/background-radial.jpeg" -->
 
 # Using Projection AR to Add  Design Studio Pedagogy to a CS Classroom 
@@ -210,3 +195,21 @@ _Changing the culture of the classroom is difficult!_
 - A teacher could grant permission to allow students to <br>interact with one another and to interact with the “pins.” 
 - Training teachers to integrate the technology into their <br>classroom practices
 - Students need help to learn how to critique and to<br> figure out what questions to ask.
+
+------
+<!-- .slide: data-background-video="resources/videos/spatial-is.mp4" data-background-video-loop="true"-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<blockquote style="background: rgba(32, 32, 32, 0.5);">
+<h2>What about when HMDs are pervasive?</h2> 
+spatial.is one such collab platform (not available yet)
+</blockquote>

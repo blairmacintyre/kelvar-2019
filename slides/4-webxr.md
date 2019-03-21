@@ -1,15 +1,3 @@
-<!-- .slide: data-background="resources/textures/terminator.png" -->
-<blockquote style="background: rgba(32, 32, 32, 0.5);">
-<h2>Consumer AR and the Web Are Intertwined</h2>
-  <br>
-  <br>
-<br>
-  "Always on,<br>mixing content from many sources,<br>ephemeral, <br> ... and safe!"
-  <br>  
-</blockquote>
-
-
-------
 <!-- .slide: data-background="resources/textures/background-radial.jpeg" -->
 
 # WebXR 
