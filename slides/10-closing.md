@@ -13,12 +13,38 @@
 </div>
 ------
 
-<!-- .slide: data-background="resources/textures/background-radial.jpeg" style="text-align: left;" -->
+<!-- .slide: data-background="resources/textures/background-radial.jpeg" -->
 
-
-<h2>Potential of MR as a Platform<br>depends on the whole WebXR ecosystem</h2>
+ # Need both Learning Experiences 
+ # and 
+ # Learning Environments
 
 ------
+
+<!-- .slide: data-background="resources/textures/background-radial.jpeg" -->
+
+_one more thing..._
+
+------
+<!-- .slide: data-background-video="resources/videos/hubs-vr-stream-roof-room.mp4" -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<blockquote style="background: rgba(32, 32, 32, 0.5);">
+If you know folks who won't be at the main conference get them to try out hubs!
+</blockquote>
+
+------
+
 <!-- .slide: data-background="resources/textures/ironman.png" -->
 
 # Thank you

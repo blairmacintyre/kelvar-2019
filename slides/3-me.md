@@ -42,24 +42,6 @@ https://research.mozilla.org
 
 
 ------
-
-<!-- .slide: data-background="resources/textures/background-radial.jpeg" -->
-## At Mozilla Because AR is (finally) Here!
-<div class="image-row">
-  <div><img class="plain" data-src="resources/textures/ardisplay-hololens-circ.png"></div>
-  <div><img class="plain" data-src="resources/textures/ardisplay-daqri-circ.png"></div>
-  <div><img class="plain" data-src="resources/textures/ardisplay-odg-circ.png"></div>
-  <div><img class="plain" data-src="resources/textures/ardisplay-meta-circ.png"></div>
-</div>
-<div class="image-row">
-  <div><img class="plain" data-src="resources/textures/ardisplay-vuzix-circ.png"></div>
-  <div><img class="plain" data-src="resources/textures/lenovo-phab2-lowes-circ.png"></div>
-  <div><img class="plain" data-src="resources/textures/iphone7plus-circ.png"></div>
-  <div><img class="plain" data-src="resources/textures/ardisplay-magic-leap-goggles-circ.png"></div>
-
-<!-- NOTES -->
-
-------
 <!-- .slide: data-background-video="resources/videos/shadow-movie4-406p.m4v" -->
 
 <br>

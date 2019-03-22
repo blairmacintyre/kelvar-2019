@@ -118,24 +118,6 @@ The other recitation run without the studio design and taught more traditionally
 _(50+ students, 2 undergrad instructors)_
 
 ------
-<!-- .slide: data-background="resources/textures/background-radial.jpeg" -->
-
-<div class="column-container">
-
-<div class="column">
-<br>
-<br>
-<h3><span class="green">Pythy</span></h3>
-Pythy is a web IDE <br>for Python created for <br>computer science instruction <br> at Virginia Tech 
-</div>
-
-<div class="column">
-    <img class="plain" data-src="resources/textures/pythy.jpg">
-</div>
-
-</div>
-
-------
 <!-- .slide: data-background="resources/textures/arStudio2.jpg" -->
 <br>
 <br>
